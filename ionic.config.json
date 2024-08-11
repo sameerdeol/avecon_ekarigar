@@ -1,0 +1,7 @@
+{
+  "name": "avecon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
