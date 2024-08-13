@@ -1,0 +1,55 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Coworker-travel-details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Coworker-travel-details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+
+
+<ion-content [fullscreen]="true">
+  <app-menu-component></app-menu-component>
+  <div class="inner_content_div">
+    <div class="notification_alert">
+      <!-- <h3>You have 1 Leave Notification</h3> -->
+    </div>
+ 
+
+<ion-row>
+  <ion-col class="leave_type_dropdown">
+    <div class="inner_leave_dd_border">
+      <div>
+        <label class="label_leave">Select Start Date</label>     
+      </div>
+     <ion-input class="calender_input" type="date"></ion-input>
+    </div>   
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col class="leave_type_dropdown">
+    <div class="inner_leave_dd_border">
+      <div>
+        <label class="label_leave">Select End Date</label>     
+      </div>
+     <ion-input class="calender_input" type="date"></ion-input>
+    </div>   
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+      <div class="submit_btn_leave">
+        <ion-button (click)="navigateToTraveldata()" size="small">View</ion-button>
+      </div>
+  </ion-col>
+</ion-row>
+
+</div>
+</ion-content>

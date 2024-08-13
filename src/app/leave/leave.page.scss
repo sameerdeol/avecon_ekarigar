@@ -1,0 +1,124 @@
+p{
+    color: black;
+}
+.leave_box_div p{
+    text-align: center;
+    font-size: 12px;
+}
+.leave_heading_stats p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+.leave_heading_stats{
+    background-color: #0e9cb3;
+    padding: 8px;
+}
+.red_border{
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 16px 10px;
+    width: 80%;
+    margin: auto;
+}
+.red_border p{
+    margin: 0;
+}
+.leave_outer_border{
+    background: #80808026;
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin-top: 23px;
+}
+.inner_content_div{
+    padding: 0px 14px;
+
+}
+.padding_0{
+    padding: 0;
+}
+.leavebox_inner_pdng{
+    padding: 0px 10px;
+}
+.leave_title p{
+  color: white;
+  margin: 0;
+}
+.leave_title{
+    padding: 10px;
+    width: 70%;
+    background-color: #00807a;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    right: -52px;
+    bottom: 28px;
+}
+.padding_bottom{
+    padding: 10px 0px;
+}
+.notification_alert{
+    color: red;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    text-align: center;
+  
+}
+.notification_alert h3{
+ font-weight: 400;
+}
+.plan_leave h3{
+    color: #30c8e1;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.leave_type_dropdown ion-select {
+    border: 1px solid gray;
+    border-radius: 7px;
+    color: black;
+    padding: 0px 13px;
+    margin-bottom: 10px;
+
+}
+.leave_type_dropdown .select-icon{
+    display: none !important;
+}
+.leave_type_dropdown ion-item {
+    --inner-border-width: 0;
+}
+.inner_leave_dd_border{
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+.label_leave{
+    color: black;
+    padding: 7px 18px;
+}
+.calender_input{
+    color: black;
+    --padding-start: 18px;
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    width: 92%;
+}
+.remarks ion-input{
+    border: 1px solid gray;
+    border-radius: 7px;
+    color: black;
+    --padding-start: 18px;
+    margin-bottom: 12px;
+}
+.remarks{
+    width: 100%;
+}
+.submit_btn_leave{
+    width: 100%;
+}
+.submit_btn_leave ion-button{
+    width: 100%;
+    height: 4vh;
+    color: white;
+    --background: linear-gradient(260deg, #0099CB 0%, #3AC6C6 100%);
+}

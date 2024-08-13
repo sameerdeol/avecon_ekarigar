@@ -1,0 +1,24 @@
+.download_btn ion-button{
+    width: 40%;
+    height: 4vh;
+    color: white;
+    --background: linear-gradient(260deg, #0099CB 0%, #3AC6C6 100%);
+}
+.month_data_header ion-img{
+    width: 50%;
+}
+.month_data_header h4{
+    white-space: nowrap;
+    color: black;
+    font-size: 12px;
+}
+.employee_data p,span{
+ color: black;
+ font-size: 12px;
+ white-space: nowrap;
+}
+.employee_data {
+    width: 100%;
+    overflow-x: auto;  /* Enables horizontal scrolling if the table is too wide */
+    -webkit-overflow-scrolling: touch;  /* Enables smooth scrolling on iOS */
+  }

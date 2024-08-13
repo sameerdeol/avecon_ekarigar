@@ -35,3 +35,77 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import 'bootstrap/scss/bootstrap';
+
+ion-content{
+    --background: #fff !important;
+}
+ion-menu{
+    --background: #fff !important;
+}
+ion-toolbar{
+    --background: #00807a;
+}
+ion-menu-button{
+    color: #fff;
+}
+.list-ios {
+    --background: #fff !important;
+}
+.margin_0{
+    margin: 0;
+}
+.color_primary{
+    color: #00807a;
+}
+.navbar_heading{
+    color: white;
+    font-weight: 400;
+
+}
+.nav_bell_icon ion-icon{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    left: 12px;
+}
+.nav_outer_div{
+    display: flex;
+    float: inline-end;
+    padding: 10px;
+}
+.nav_outer_div ion-badge{
+    position: relative;
+    top: -6px;
+    right: 2px;
+}
+.menu_icons_div ion-icon{
+    color: #006662 !important;
+}
+.menu_icons_div svg{
+    color: #006662 !important;
+    margin-right: 11px;
+
+}
+.hover_green_menu{
+    color: #006662 !important;
+    padding: 0px 13px;
+    font-size: 14px;
+    --inner-border-width: 0;
+}
+
+//   .hover_green_menu{
+//     padding: 12px 24px !important;
+//   }
+.menu_inner_div:hover{
+    // padding: 11px 13px;
+    background: #46bbb3 !important;
+    border-radius: 5px;
+}
+.menu_inner_div{
+   padding: 12px;
+}
+.theme_color{
+    color: #fff;
+    background-color: #00807a;
+}
