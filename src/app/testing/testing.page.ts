@@ -11,10 +11,6 @@ export class TestingPage implements OnInit {
 
   ngOnInit() {
   }
-  columns = ['Column 1', 'Column 2', 'Column 3', 'column 4', 'column 5'/* ... more columns */];
-  data = [
-    ['Data 1.1', 'Data 1.2', 'Data 1.3', 'Data1.4','Data 1.5' /* ... more data */],
-    ['Data 2.1', 'Data 2.2', 'Data 2.3', 'Data2.4', 'Data 2.5' /* ... more data */],
-    // ... more rows
-  ];
+  nineColumnItems = Array.from({ length: 9 }, (_, i) => `9-Col Item ${i + 1}`);
+  sixColumnItems = Array.from({ length: 6 }, (_, i) => `6-Col Item ${i + 1}`);
 }

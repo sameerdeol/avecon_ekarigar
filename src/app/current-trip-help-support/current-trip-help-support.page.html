@@ -1,0 +1,24 @@
+
+<app-menu-component></app-menu-component>
+<ion-content [fullscreen]="true">
+   <ion-row>
+    <ion-col style="color: black;">
+      Current Trip:
+      It will always show yesterday’s trip. You can upload any additional expense documents in this field if required. You have to finish the trip otherwise you have marked absent. This is applicable for all type of trips (HQ,ExStn,Overnight, Multicity Same day & multicity overnight)
+      
+      For HQ: no document required (if there is any misc expenses you can attach the document in other Expenses only.)
+      
+      ExStn: within 250 km (both side) you have to attach Food bill or petrol Slip or Bus / Train Ticket as travel proof only You cannot fill amount in this case. Your claim will be per Kilometer and Exstn allowance as sanctioned.(if there is any misc expenses you can attach the document in other Expenses only).
+      
+      ExStn: above 250 km (both side) you have to attach food bill without amount as Exstn proof. You have to attach Bus / Train Ticket or petrol Slip as travel proof with actual amount. Your claim will be actual travel ticket amount and Exstn allowance as sanctioned.(if there is any misc expenses you can attach the document in other Expenses only.)
+      
+      Overnight: You have to attach food bill without amount as Exstn proof. You have to attach Petrol Slip with amount or Bus /Train Ticket with amount & Hotel Bill with amount. Your claim will be actual travel ticket amount; Outstation allowance and Hotel Bill as per sanction limit (inclusive outstation allowance as sanctioned).
+      
+      Multicity Same Day: same ax Ex Stn
+      Multicity Overnight: same as overnight
+      
+      Mobile Allowance: You can feed the actual amount once in a month. You have to attached the bill.
+      IF TRIP IS NOT FINISHED THAN ATTENDANCE WILL BE MARK AS ABSENT AUTOMATICALLY FOR THE DAY/PERIOD
+    </ion-col>
+   </ion-row>
+</ion-content>

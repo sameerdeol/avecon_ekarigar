@@ -4,3 +4,29 @@ ion-title{
 ion-col{
     color: black;
 }
+.grid-container {
+    width: 100%;
+    padding: 16px;
+  }
+  
+  .grid-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .grid-item {
+    flex: 0 0 11.11%; /* 9 columns: 100% / 9 ≈ 11.11% each */
+    max-width: 11.11%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  /* For the 6-column grid, adjust the width of each item */
+  .grid-item.six-column {
+    flex: 0 0 16.67%; /* 6 columns: 100% / 6 ≈ 16.67% each */
+    max-width: 16.67%;
+  }
+  

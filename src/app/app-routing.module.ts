@@ -62,6 +62,34 @@ const routes: Routes = [
   {
     path: 'month-expense-data',
     loadChildren: () => import('./month-expense-data/month-expense-data.module').then( m => m.MonthExpenseDataPageModule)
+  },
+  {
+    path: 'leave-help',
+    loadChildren: () => import('./leave-help/leave-help.module').then( m => m.LeaveHelpPageModule)
+  },
+  {
+    path: 'help-support',
+    loadChildren: () => import('./help-support/help-support.module').then( m => m.HelpSupportPageModule)
+  },
+  {
+    path: 'current-trip-help-support',
+    loadChildren: () => import('./current-trip-help-support/current-trip-help-support.module').then( m => m.CurrentTripHelpSupportPageModule)
+  },
+  {
+    path: 'travel-details-help',
+    loadChildren: () => import('./travel-details-help/travel-details-help.module').then( m => m.TravelDetailsHelpPageModule)
+  },
+  {
+    path: 'travel-expense-help',
+    loadChildren: () => import('./travel-expense-help/travel-expense-help.module').then( m => m.TravelExpenseHelpPageModule)
+  },
+  {
+    path: 'coworker-help',
+    loadChildren: () => import('./coworker-help/coworker-help.module').then( m => m.CoworkerHelpPageModule)
+  },
+  {
+    path: 'leave-details',
+    loadChildren: () => import('./leave-details/leave-details.module').then( m => m.LeaveDetailsPageModule)
   }
 ];
 

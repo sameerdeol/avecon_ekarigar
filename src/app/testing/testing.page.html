@@ -1,5 +1,64 @@
 <app-menu-component></app-menu-component>
-<ion-content [fullscreen]="true" scrollX="true">
-
-
-</ion-content>
+<ion-content>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Card 1: Leave Taken -->
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-primary h-100">
+          <div class="card-body">
+            <h5 class="card-title">Leave Taken</h5>
+            <p class="card-text display-4">5</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2: Working Days -->
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-success h-100">
+          <div class="card-body">
+            <h5 class="card-title">Working Days</h5>
+            <p class="card-text display-4">22</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3: Absent -->
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-danger h-100">
+          <div class="card-body">
+            <h5 class="card-title">Absent</h5>
+            <p class="card-text display-4">3</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4: National Leaves -->
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-warning h-100">
+          <div class="card-body">
+            <h5 class="card-title">National Leaves</h5>
+            <p class="card-text display-4">2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <!-- Card 5: Coworker Yesterday Not Uploaded Doc -->
+      <div class="col-md-12">
+        <div class="card bg-light h-100">
+          <div class="card-body d-flex align-items-center">
+            <div class="mr-3">
+              <i class="bi bi-exclamation-circle text-danger" style="font-size: 2rem;"></i>
+            </div>
+            <div>
+              <h5 class="card-title">Coworker Yesterday Not Uploaded Doc</h5>
+              <p class="card-text">Reminder: Please check with your coworker.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </ion-content>

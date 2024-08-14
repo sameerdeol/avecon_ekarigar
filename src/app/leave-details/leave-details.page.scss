@@ -1,0 +1,40 @@
+.ion_col ion-col {
+    background-color: #135d54;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+  }
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #0f0f0f;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #00807a;
+}
+td{
+    color: #0f0f0f;
+}
+ion-searchbar {
+    color: black;
+    border: 1px solid;
+}
+.travel_data_head{
+    padding: 13px;
+}
+.download_excel ion-button{
+    --background: #c5c5c5;
+     --border-radius: 0;
+}
