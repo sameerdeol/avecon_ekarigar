@@ -3,42 +3,178 @@
     <ion-title>month-expense-data</ion-title>
   </ion-toolbar>
 </ion-header> -->
-<app-menu-component></app-menu-component>
-<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true" >
+  <div >
   <ion-row>
     <ion-col>
         <div class="download_btn">
-          <ion-button size="small">Download</ion-button>
+          <ion-button (click)="generateExpenseDataPDF()" size="small">Download</ion-button>
         </div>
     </ion-col>
   </ion-row>
-  <ion-row  class="month_data_header">
-    <ion-col size="6">
-      <div>
-        <ion-img src="./assets/main_logo.png"></ion-img>
-      </div>       
-    </ion-col>
-    <ion-col size="6">
-      <div>
-        <h4>
-          MONTHLY EXPENSE STATEMENT
-        </h4>
-      </div>
-  </ion-col>
-  </ion-row>
-  <!-- <table class="employee_data table-responsive">
-    <ion-row>
-      <ion-col size="4"><p>Name: <span>Dharam Singh</span></p></ion-col>
-      <ion-col size="4"><p>Designation: <span>RSM</span></p></ion-col>
-      <ion-col size="4"><p>Reporting: <span>Arpav Maniar</span></p></ion-col>
-      <ion-col size="4"><p>Zone: <span>West</span></p></ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="3"><p>HQ: <span>Indore</span></p></ion-col>
-      <ion-col size="3"><p>Working Days: <span>4</span></p></ion-col>
-      <ion-col size="3"><p>Leave: <span>6</span></p></ion-col>
-      <ion-col size="3"><p>Month: <span>August</span></p></ion-col>
-    </ion-row>
-  </table> -->
 
+  <div class="table-container table-responsive" id="downloadExpenseData">
+    <ion-row  class="month_data_header">
+      <ion-col size="6">
+        <div>
+          <ion-img src="./assets/main_logo.png"></ion-img>
+        </div>       
+      </ion-col>
+      <ion-col size="6">
+        <div>
+          <h4>
+            MONTHLY EXPENSE STATEMENT
+          </h4>
+        </div>
+    </ion-col>
+    </ion-row>
+    <table>
+        <thead class="first_row">
+            <tr>
+                <th>Name:</th><td>Dharam Singh</td>
+                <th>Designation:</th><td>RSM</td>
+                <th>Reporting:</th><td>Arpav Maniar</td>
+                <th>Zone:</th>  <td>West</td>
+                <th>HQ:</th><td>Indore</td>
+                <th>Working Days:</th><td>4</td>
+                <th>Leave:</th><td>6</td>
+                <th>Month:</th> <td>August</td>
+            </tr>
+        </thead> 
+        <thead class="second_row">
+          <tr>
+            <th>Per km:</th><td>3.50</td>
+            <th>Print Date:</th><td>14-08-2024</td>                    
+          </tr>
+      </thead>    
+        <thead class="third_row">
+          <tr>
+              <th>HQ Exp:</th><td>475</td>
+              <th>Extsn Exp:</th><td>750</td>
+              <th>Hotel Stay:</th><td>1750</td>
+              <th>Mobile:</th><td>600</td>                   
+          </tr>
+      </thead>
+      <thead class="forth_row">
+        <tr>
+          <th>Sr No.</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Travel Form</th>
+          <th>Travel To</th>  
+          <th>Joint Working</th>
+          <th>Daily Allowance</th>
+          <th>Mode</th>
+          <th>Kms</th>
+          <th>Fare</th>   
+          <th>Allowance</th> 
+          <th>Hotel Stay</th>
+          <th>Other Expense</th>
+          <th>Total</th>               
+      </tr>
+      </thead>
+      <tbody  id="forth_row">
+         <tr>
+          <td>Leave</td>
+          <td>01-08-2024</td>
+          <td>01-08-2024</td>
+          <td>CL Emergency(Approved)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+         </tr>
+         <tr>
+          <td>Leave</td>
+          <td>01-08-2024</td>
+          <td>01-08-2024</td>
+          <td>CL Emergency(Approved)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+         </tr>
+         <tr>
+          <td>Leave</td>
+          <td>01-08-2024</td>
+          <td>01-08-2024</td>
+          <td>CL Emergency(Approved)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+         </tr>
+         <tr>
+          <td>Sunday</td>
+          <td>01-08-2024</td>
+          <td>Sunday</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+         </tr>
+         <tr>
+          <td>1</td>
+          <td>05-08-2024</td>
+          <td>05-08-2024</td>
+          <td>Indore,Madhya Pradesh</td>
+          <td>Pipliya Mandi Mandsaur,Madhya Pradesh</td>
+          <td></td>
+          <td>ExStn</td>
+          <td>Bus</td>
+          <td>452</td>
+          <td>904</td>
+          <td>750</td>
+          <td>0</td>
+          <td>196 (difference fare),</td>
+          <td>1850</td>
+         </tr>
+         <tr>
+          <td>2</td>
+          <td>07-08-24</td>
+          <td>07-08-24</td>
+          <td>Indore,Madhya Pradesh</td>
+          <td>Kukshi,Madhya Pradesh</td>
+          <td>Joint Working With Naresh Singh</td>
+          <td>ExStn</td>
+          <td>Bus</td>
+          <td>452</td>
+          <td>904</td>
+          <td>750</td>
+          <td>0</td>
+          <td>196 (difference fare),</td>
+          <td>1850</td>
+         </tr>
+         <tr>
+      </tbody>
+    
+    </table>
+</div>
+</div>
 </ion-content>
