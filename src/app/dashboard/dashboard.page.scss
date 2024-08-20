@@ -25,7 +25,11 @@ p{
     margin: 0;
 }
 .leave_outer_border{
-    background: #80808026;
+    // background: #80808026;
+    // border: 1px solid gray;
+    // border-radius: 7px;
+    // margin-top: 23px;
+    background: rgba(241, 241, 241, 0.61);
     border: 1px solid gray;
     border-radius: 7px;
     margin-top: 23px;
@@ -124,4 +128,5 @@ p{
 }
 .card{
     background-color: #00807a !important;
+    border: 2px solid #7b7b7b;
 }

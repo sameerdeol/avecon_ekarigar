@@ -22,13 +22,15 @@ th, td {
 }
 
 th {
-    background-color: #00807a;
+    background-color: #dfdfdf;
+    color: #0f0f0f;
 }
 td{
     color: #0f0f0f;
 }
 ion-searchbar {
     color: black;
+    border-radius: 12px;
     border: 1px solid;
 }
 .travel_data_head{
@@ -37,4 +39,7 @@ ion-searchbar {
 .download_excel ion-button{
     --background: #c5c5c5;
      --border-radius: 0;
+}
+.serachbar_padding{
+    padding: 12px;
 }

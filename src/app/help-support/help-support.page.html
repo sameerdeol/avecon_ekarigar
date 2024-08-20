@@ -2,12 +2,34 @@
 <app-menu-component></app-menu-component>
 <ion-content [fullscreen]="true">
    <ion-row>
-    <ion-col style="color: black;">
-      HQ:
-This Option means that your working trip is HQ.
+    <ion-col>
+      <div class="">
+         <div class="primary_bg support_padding mt-3">
+         <h3>HQ:</h3>
+         <p>This Option means that your working trip is HQ.</p>
+         </div>
+          
+         <div class="primary_bg support_padding mt-3">
+            <h3>ExStn:</h3>
+            <p>This Option means that your trip distance is more than 100km.</p>
+         </div>
+         <div class="primary_bg support_padding mt-3">
+            <h3>Overnight Stay Trip:</h3>
+            <p>It means that your trip is overnight But only one place to another place not multicity.</p>
+            <ion-img src="./assets/Overnight.jpg"></ion-img>
+         </div>
+         <div class="primary_bg support_padding mt-3">
+            <h3>Multi City Exstn:</h3>
+            <p>It means that your trip is more than one city in same day.</p>
+            <ion-img src="./assets/Multi-City.jpg"></ion-img>
+         </div>
+         <div class="primary_bg support_padding mt-3">
+            <h3>Multi City Overnight Stay:</h3>
+            <p>It means that your trip is more than one city in diffrent days With Night Stay.</p>
+            <ion-img src="./assets/Multi_overnight.jpg"></ion-img>
+         </div>
+      </div>
 
-ExStn:
-This Option means that your trip distance is more than 100km.
     </ion-col>
    </ion-row>
 </ion-content>

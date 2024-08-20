@@ -26,44 +26,39 @@ export class LoginPagePage implements OnInit {
     this.router.navigate(['/dashboard']);
   }
 
+
   async getCurrentLocation() {
     try {
       const permissionStatus = await Geolocation.checkPermissions();
       console.log('Permission status: ', permissionStatus.location);
-      
-      if (permissionStatus.location != 'granted') {
+      if(permissionStatus?.location != 'granted') {
         const requestStatus = await Geolocation.requestPermissions();
-        if (requestStatus.location != 'granted') {
-          // await this.openSettings(true);
+        if(requestStatus.location != 'granted') {
+          // go to location settings
+          await this.openSettings(true);
           return;
         }
       }
 
-      if (Capacitor.getPlatform() == 'android') {
-        await this.enableGps();
+      if(Capacitor.getPlatform() == 'android') {
+        this.enableGps();
       }
 
       let options: PositionOptions = {
         maximumAge: 3000,
         timeout: 10000,
-        enableHighAccuracy: true,
+        enableHighAccuracy: true
       };
       const position = await Geolocation.getCurrentPosition(options);
       console.log(position);
-      
-      // Navigate to dashboard after getting location
-      this.navigateToDashboard();
-
-    } catch (e: any) {
-      if (e?.message == 'Location services are not enabled') {
+    } catch(e: any) {
+      if(e?.message == 'Location services are not enabled') {
         await this.openSettings();
       }
       console.log(e);
-    } finally {
-      this.loading = false;
     }
   }
-   
+
   openSettings(app = false) {
     console.log('open settings...');
     return NativeSettings.open({
@@ -74,7 +69,7 @@ export class LoginPagePage implements OnInit {
 
   async enableGps() {
     const canRequest = await this.locationAccuracy.canRequest();
-    if (canRequest) {
+    if(canRequest) {
       await this.locationAccuracy.request(this.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY);
     }
   }

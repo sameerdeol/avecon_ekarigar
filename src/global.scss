@@ -46,6 +46,12 @@ ion-menu{
 ion-toolbar{
     --background: #00807a;
 }
+.primary_bg{
+    background: #00807a;
+}
+.support_padding{    
+    padding: 13px;
+}
 ion-menu-button{
     color: #fff;
 }
@@ -54,6 +60,9 @@ ion-menu-button{
 }
 .margin_0{
     margin: 0;
+}
+.padding_0{
+    padding: 0;
 }
 .color_primary{
     color: #00807a;
@@ -108,4 +117,8 @@ ion-menu-button{
 .theme_color{
     color: #fff;
     background-color: #00807a;
+}
+.badge_color{
+    --background: #f17e1b;
+    color: white;
 }
